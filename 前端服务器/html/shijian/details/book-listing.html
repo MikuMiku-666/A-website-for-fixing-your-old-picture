@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendors/slick/slick.css" rel="stylesheet">
+    <link href="assets/vendors/slick/slick-theme.css" rel="stylesheet">
+    <link href="assets/vendors/elagent-icon/style.css" rel="stylesheet">
+    <link href="assets/vendors/font-awesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendors/icomoon/style.css" rel="stylesheet">
+    <link href="assets/vendors/themify-icon/themify-icons.css" rel="stylesheet">
+    <link href="assets/vendors/animation/animate.css" rel="stylesheet">
+    <link href="assets/vendors/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/vendors/themify-icon/themify-icons.css" rel="stylesheet">
+    <link href="assets/vendors/ui-fliter/jquery-ui.css" rel="stylesheet">
+    <link href="assets/vendors/nice-select/css/nice-select.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <title>Bookjar</title>
+</head>
+
+<body data-scroll-animation="true" data-bs-target="#book_nav_spy" data-bs-spy="scroll" data-bs-offset="100">
+
+    <div class="body_wrapper">
+        <header class="header_area">
+            <nav class="navbar navbar-expand-lg menu_one menu_white" id="header">
+                <div class="container">
+                    <a class="navbar-brand sticky_logo" href="index.html">
+                        <img src="assets/img/home/logo-white.svg" alt="logo">
+                        <img src="assets/img/home-two/logo-dark.svg" alt="logo">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="hamburger-cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu w_menu ms-auto me-auto">
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    HOME
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link">Home One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-2.html" class="nav-link">Home Two</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-3.html" class="nav-link">Home Three</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-4.html" class="nav-link">Home Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Shop
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Shop
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="shop.html" class="nav-link">Shop</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="shop-no-sidebar.html" class="nav-link">Shop No Sidebar</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="product-single.html" class="nav-link">Product Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="cart.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Cart
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="cart.html" class="nav-link">Cart</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="cart-guest.html" class="nav-link">Cart Guest</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="checkout.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Checkout
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="checkout.html" class="nav-link">Checkout</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout-login.html" class="nav-link">Checkout Login</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout-gift.html" class="nav-link">Checkout Gift</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="my-account.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dashboard
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">User Profile</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="my-orders.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Orders
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="my-orders.html" class="nav-link">Orders</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="order-track.html" class="nav-link">Order Tracking</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="order-confrmation.html" class="nav-link">Thank You Page</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="my-ebook-library.html" class="nav-link">Ebook Library</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="my-list.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Book List
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="my-list.html" class="nav-link">Book List</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="my-list-details.html" class="nav-link">Book List Details</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="my-list-create.html" class="nav-link">Create Book List</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="my-address.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Address Book
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="my-address.html" class="nav-link">Address Book</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="add-new-address.html" class="nav-link">Add New Address</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="my-following-authors.html" class="nav-link">Following Authors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="my-rating-reviews.html" class="nav-link">Rating & Reviews</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="my-wishlist.html" class="nav-link">Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu mega_menu tab-demo active">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore
+                                </a>
+                                <ul class="dropdown-menu sub">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-5 tabHeader">
+                                                <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill" href="#v-pills-tour" role="tab" aria-controls="v-pills-tour" aria-selected="false">Utility Pages</a>
+                                                    </li>
+                                                    <li class="nav-item active">
+                                                        <a class="nav-link" id="v-others-menu-tab" data-toggle="pill" href="#v-others-menu" role="tab" aria-controls="v-others-menu" aria-selected="false">Company</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-doc-tab" data-toggle="pill" href="#v-pills-doc" role="tab" aria-controls="v-pills-doc" aria-selected="true">Shop Pages</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-code-tab" data-toggle="pill" href="#v-pills-code" role="tab" aria-controls="v-pills-code" aria-selected="false">Dashboard</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#v-pills-layout" role="tab" aria-controls="v-pills-layout" aria-selected="false">Blog & Author</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="tab-content tabContent" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade" id="v-pills-tour" role="tabpanel" aria-labelledby="v-pills-tour-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list w_100">
+                                                                <li>
+                                                                    <a href="login.html">Sign In</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="registration.html">Sign Up</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="typography.html">Typography</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="page-banner-style-2.html">Banner style
+                                                                        02</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="page-banner-style-3.html">Banner style
+                                                                        03</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade active show" id="v-others-menu" role="tabpanel" aria-labelledby="v-others-menu-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list w_100">
+                                                                <li>
+                                                                    <a class="active" href="book-listing.html">Book Listing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="about.html">About</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="contact.html">Contact Us</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="terms-condition.html">Terms & Services</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="shop.html">Shop</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop-no-sidebar.html">Shop No Sidebar</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="product-single.html">Product Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="cart.html">Cart</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="cart-guest.html">Cart Guest</a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="checkout.html">Checkout</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="checkout-gift.html">Checkout Gift</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="checkout-login.html">Checkout Login</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="my-wishlist.html">Wishlist</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-code" role="tabpanel" aria-labelledby="v-pills-code-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="my-account.html">User Profile</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-orders.html">Orders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="order-track.html">Order Tracking</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="order-confrmation.html">Thank You Page</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-ebook-library.html">Ebook Library</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-following-authors.html">Following
+                                                                        Authors</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-rating-reviews.html">Rating &
+                                                                        Authors</a>
+                                                                </li>
+
+                                                            </ul>
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="my-list.html">Book List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-list-details.html">Book List Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-list-create.html">Create Book List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-address.html">Address Book</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="add-new-address.html">Add New Address</a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-layout" role="tabpanel" aria-labelledby="v-pills-layout-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="blog-grid.html">Blog Grid</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-extend-grid.html">Extended Grid</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-list.html">Blog List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-details.html">Blog Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="author.html">Author</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="author-single.html">Author Single</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="blog-list.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Blog
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog-grid.html" class="nav-link">Blog Grid</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-extend-grid.html" class="nav-link">Extended Grid</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-list.html" class="nav-link">Blog List</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="alter_nav">
+                            <ul class="navbar-nav search_cart menu">
+                                <li class="nav-item search"><a class="nav-link search-btn" href="javascript:void(0);"><i class="ti-search"></i></a>
+                                    <form action="#" method="get" class="menu-search-form">
+                                        <div class="input-group">
+                                            <input type="search" class="form-control" placeholder="Search here..">
+                                            <button type="submit"><i class="ti-arrow-right"></i></button>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li class="nav-item shpping-cart dropdown submenu">
+                                    <a class="cart-btn nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ti-shopping-cart"></i><span class="num total-cart-count">2</span></a>
+                                    <div class="dropdown-menu">
+                                        <ul class="cart-dropdown list-unstyled">
+                                            <li class="cart-single-item clearfix">
+                                                <div class="cart-img">
+                                                    <img src="assets/img/cart1.jpg" alt="styler">
+                                                </div>
+                                                <div class="cart-content text-left">
+                                                    <p class="cart-title"><a href="#">Pale pink and black buttoned
+                                                            dress</a>
+                                                    </p>
+                                                    <p><del>$400.00</del> - $350.00</p>
+                                                </div>
+                                                <div class="cart-remove">
+                                                    <a href="#" class="action"><span class="ti-close"></span></a>
+                                                </div>
+                                            </li>
+                                            <li class="cart-single-item clearfix">
+                                                <div class="cart-img">
+                                                    <img src="assets/img/cart1.jpg" alt="styler">
+                                                </div>
+                                                <div class="cart-content text-left">
+                                                    <p class="cart-title"><a href="#">Vera bradley lug- gage large
+                                                            duffel</a>
+                                                    </p>
+                                                    <p>$350.00</p>
+                                                </div>
+                                                <div class="cart-remove">
+                                                    <a href="#" class="action"><span class="ti-close"></span></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="cart_f">
+                                            <div class="cart-pricing">
+                                                <p class="total">Subtotal :<span class="p-total text-end">$<span class="total-cart-amount"></span></span>
+                                                </p>
+                                            </div>
+                                            <div class="cart-button text-center">
+                                                <a href="cart.html" class="btn btn-cart get_btn pink">View Cart</a>
+                                                <a href="checkout.html" class="btn btn-cart get_btn dark">Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="bj_theme_btn strock_btn hidden-sm hidden-xs" href="login.html"><i class="fa-regular fa-user"></i>Login</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- header area  -->
+        <!-- Banner Section -->
+        <section class="my-books-banner banner_animation_03" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-8 col-lg-7 text-left">
+                        <div class="bj_banner_content_two">
+                            <h2 class="banner_title wow fadeInRight" data-wow-delay="0.8s">Learn how to make better
+                                design </h2>
+                            <p class="wow fadeInRight" data-wow-delay="0.9s">Read how other companies use Avocode.
+                                Learn from personal stories of top
+                                design and development leaders from companies like Dribbble or Figma. Go through data
+                                from milions of design files to find out what’s trending.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-img">
+                <div class="book-shape" data-parallax='{"x": -50, "y": 290, "rotateZ":150}'><img class="layer" data-depth="-0.1" src="assets/img/my-book/hero-book-1.png" alt="book"></div>
+                <div class="book-shape" data-parallax='{"x": 20, "y": 90, "rotateZ":0}'><img class="layer" data-depth="0.16" src="assets/img/my-book/hero-book-2.png" alt="book"></div>
+                <div class="book-shape" data-parallax='{"x": -300, "y": -50, "rotateZ":70}'><img class="layer" data-depth="-0.19" src="assets/img/my-book/hero-book-3.png" alt="book"></div>
+                <div class="book-shape" data-parallax='{"x": -20, "y": 180, "rotateX":120}'><img class="layer" data-depth="0.17" src="assets/img/my-book/hero-book-4.png" alt="book"></div>
+                <div class="book-shape" data-parallax='{"x": -120, "y": 110, "rotateY":80}'><img class="layer" data-depth="-0.2" src="assets/img/my-book/hero-book-5.png" alt="book"></div>
+                <div class="book-shape" data-parallax='{"x": -120, "y": 90, "rotateZ":0}'><img class="layer" data-depth="-0.08" src="assets/img/my-book/hero-book-6.png" alt="book"></div>
+                <img class="wow fadeInRight" data-wow-delay="0.1s" src="assets/img/my-book/hero-main.png" alt="">
+            </div>
+        </section>
+        <!-- Banner Section -->
+
+        <!-- MY Books Section -->
+        <section class="my-books-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="books-sidebar">
+                            <nav id="book_nav_spy" class="nav nav-pills">
+                                <ul class="list-unstyled nav">
+                                    <li class="nav-item"><a href="#grit" class="nav-link active">The Grit</a></li>
+                                    <li class="nav-item"><a href="#design-trend" class="nav-link">Design Trend
+                                            Reports</a></li>
+                                    <li class="nav-item"><a href="#case" class="nav-link">Case Studies</a></li>
+                                    <li class="nav-item"><a href="#cloud" class="nav-link">Private Cloud</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 offset-lg-2 position-relative">
+                        <div id="grit">
+                            <h3>The Grit</h3>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-1.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">The Grit <br> Volume I.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.2s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-1.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">The Grit <br> Volume II.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-1.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">The Grit <br> Volume III.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="design-trend">
+                            <h3>The Grit</h3>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-2.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">Design Trend<br> Volume I.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.2s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-2.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">Design Trend<br> Volume II.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-2.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">Design Trend<br> Volume III.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="case">
+                            <h3>The Grit</h3>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-1.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">The Grit <br> Volume I.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.2s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-1.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">The Grit <br> Volume II.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-1.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">The Grit <br> Volume III.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cloud">
+                            <h3>The Grit</h3>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-2.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">Design Trend<br> Volume I.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.2s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-2.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">Design Trend<br> Volume II.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-book wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="book-img" href="product-single.html"> <img src="assets/img/my-book/book-2.png" alt=""></a>
+
+                                <div class="book-info">
+                                    <h2 class="title">Design Trend<br> Volume III.</h2>
+                                    <p>Get actionable tips and learn from this collection of exclusive interviews
+                                        with
+                                        the top leaders in the design and dev space.</p>
+                                    <a class="bj_theme_btn text_btn" href="product-single.html">Read More <i class="arrow_right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MY Books Section -->
+
+        <!-- CTA Section -->
+        <section class="cta-area-7">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 position-relative">
+                        <div class="img-shapes">
+                            <div class="shape">
+                            </div>
+
+                            <div class="shape" data-parallax='{"x": 200, "y": 90, "rotateZ":0}'>
+                                <div class="fly-msg">
+                                    <img src="assets/img/my-book/mail.png" alt="">
+                                    <img src="assets/img/my-book/wings-1.png" alt="">
+                                    <img src="assets/img/my-book/wings-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="shape" data-parallax='{"x": 0, "y": 0, "rotateZ":-6}'>
+                                <img class="wow fadeInRight" src="assets/img/my-book/postbox.png" alt="img">
+                            </div>
+                            <div class="shape" data-parallax='{"x": -200, "y": 0, "rotateZ":0}'>
+                                <img src="assets/img/my-book/cloud.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-7">
+                        <div class="section-title">
+                            <h2 class="title">Subscribe</h2>
+                            <p>Get notified for new books and collections by subscribing to our newsletter.</p>
+                            <form action="#" class="input-group search_form wow fadeInUp" data-wow-delay="0.6s">
+                                <input type="text" placeholder="Your email here" class="form-control">
+                                <button type="submit" class="bj_theme_btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+
+        <!-- footer area css  -->
+        <footer class="bj_footer_area bj_footer_area_three bj_footer_area_white" data-bg-color="#fcfcfc">
+            <div class="round_shap one wow fadeInLeft" data-wow-delay="0.3s"></div>
+            <div class="round_shap two wow fadeInLeft" data-wow-delay="0.5s"></div>
+            <div class="round_shap three wow fadeInRight" data-wow-delay="0.8s"></div>
+            <div class="round_shap four wow zoomIn" data-wow-delay="0.9s"></div>
+            <div class="container">
+                <div class="footer_top">
+                    <div class="row">
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="f_widget f_widget_dark link_widget wow fadeInUp" data-wow-delay="0.3s">
+                                <h2 class="f_widget_title">Explore</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Store Locations</a></li>
+                                    <li><a href="#">Gift Cards</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="f_widget f_widget_dark link_widget wow fadeInUp" data-wow-delay="0.4s">
+                                <h2 class="f_widget_title">Products</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="#">Brands</a></li>
+                                    <li><a href="author.html">Authors</a></li>
+                                    <li><a href="#">Publishers</a></li>
+                                    <li><a href="#">List</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="f_widget f_widget_dark link_widget wow fadeInUp" data-wow-delay="0.5s">
+                                <h2 class="f_widget_title">Support</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="#">Order Track</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="#">Find My Product</a></li>
+                                    <li><a href="#">Guide</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="f_widget f_widget_dark about_widget wow fadeInUp" data-wow-delay="0.6s">
+                                <h2 class="f_widget_title">Newsletter</h2>
+                                <p>Aenean amet netus aliquam elit eu, sagittis
+                                    id natoque id. </p>
+                                <form action="#" class="d-sm-flex justify-content-end footer-search">
+                                    <input type="email" class="form-control email-form" placeholder="Your email address">
+                                    <button class="bj_theme_btn btn-Subscribe" type="submit">
+                                        Subscribe
+                                    </button>
+                                </form>
+                                <ul class="list-unstyled f_social">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom d-flex justify-content-between">
+                    <a href="#" class="f_logo wow fadeInLeft" data-wow-delay="0.3s">
+                        <img src="assets/img/home-two/logo-dark.svg" alt="f_logo">
+                    </a>
+                    <div class="footer_right d-flex wow fadeInRight" data-wow-delay="0.5s">
+                        <div class="footer_terms me-5">
+                            <a href="terms-condition.html">Terms of service</a>
+                            <a href="privacy-policy.html">Privacy policy</a>
+                            <a href="#">Licenses</a>
+                            <a href="#">Sitemap</a>
+                        </div>
+                        <p>Copyright © 2024 Spider-Themes</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/parallax/parallax.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/js/comming-soon.js"></script>
+    <script src="assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/parallax/jquery.parallax-scroll.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/ui-fliter/jquery-ui.js"></script>
+    <script src="assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="assets/vendors/wow/wow.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

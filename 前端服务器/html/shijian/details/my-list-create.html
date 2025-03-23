@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendors/elagent-icon/style.css" rel="stylesheet">
+    <link href="assets/vendors/font-awesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendors/icomoon/style.css" rel="stylesheet">
+    <link href="assets/vendors/themify-icon/themify-icons.css" rel="stylesheet">
+    <link href="assets/vendors/animation/animate.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <title>Bookjar</title>
+</head>
+
+<body data-scroll-animation="true">
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="assets/img/favicon.png" alt="Image">
+                    <h4><span>Bookjar</span></h4>
+                </div>
+            </div>
+            <h2 class="head">Did You Know?</h2>
+            <p></p>
+        </div>
+    </div>
+    <div class="body_wrapper">
+
+        <div class="toast-container position-fixed p-3">
+            <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Cart Update</strong>
+                    <small>just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Item added to the cart!
+                </div>
+            </div>
+        </div>
+
+        <!-- Header area -->
+        <header class="header_area header_relative">
+            <nav class="navbar navbar-expand-lg menu_one" id="header">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/home-two/logo-dark.svg" alt="logo"></a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="hamburger-cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu w_menu ms-auto me-auto">
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    HOME
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link">Home One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-2.html" class="nav-link">Home Two</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-3.html" class="nav-link">Home Three</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-4.html" class="nav-link">Home Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Shop
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Shop
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="shop.html" class="nav-link">Shop</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="shop-no-sidebar.html" class="nav-link">Shop No Sidebar</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="product-single.html" class="nav-link">Product Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="cart.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Cart
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="cart.html" class="nav-link">Cart</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="cart-guest.html" class="nav-link">Cart Guest</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="checkout.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Checkout
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="checkout.html" class="nav-link">Checkout</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout-login.html" class="nav-link">Checkout Login</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout-gift.html" class="nav-link">Checkout Gift</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu active">
+                                <a class="nav-link dropdown-toggle" href="my-account.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dashboard
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">User Profile</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="my-orders.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Orders
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="my-orders.html" class="nav-link">Orders</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="order-track.html" class="nav-link">Order Tracking</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="order-confrmation.html" class="nav-link">Thank You Page</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="my-ebook-library.html" class="nav-link">Ebook Library</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown submenu active">
+                                        <a class="nav-link dropdown-toggle" href="my-list.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Book List
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="my-list.html" class="nav-link">Book List</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="my-list-details.html" class="nav-link">Book List Details</a>
+                                            </li>
+                                            <li class="nav-item active">
+                                                <a href="my-list-create.html" class="nav-link">Create Book List</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="my-address.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Address Book
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="my-address.html" class="nav-link">Address Book</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="add-new-address.html" class="nav-link">Add New Address</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="my-following-authors.html" class="nav-link">Following Authors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="my-rating-reviews.html" class="nav-link">Rating & Reviews</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="my-wishlist.html" class="nav-link">Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu mega_menu tab-demo">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore
+                                </a>
+                                <ul class="dropdown-menu sub">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-5 tabHeader">
+                                                <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                    <li class="nav-item active">
+                                                        <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill" href="#v-pills-tour" role="tab" aria-controls="v-pills-tour" aria-selected="false">Utility Pages</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-others-menu-tab" data-toggle="pill" href="#v-others-menu" role="tab" aria-controls="v-others-menu" aria-selected="false">Company</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-doc-tab" data-toggle="pill" href="#v-pills-doc" role="tab" aria-controls="v-pills-doc" aria-selected="true">Shop Pages</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-code-tab" data-toggle="pill" href="#v-pills-code" role="tab" aria-controls="v-pills-code" aria-selected="false">Dashboard</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#v-pills-layout" role="tab" aria-controls="v-pills-layout" aria-selected="false">Blog & Author</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="tab-content tabContent" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade active show" id="v-pills-tour" role="tabpanel" aria-labelledby="v-pills-tour-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list w_100">
+                                                                <li>
+                                                                    <a href="login.html">Sign In</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="registration.html">Sign Up</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="typography.html">Typography</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="page-banner-style-2.html">Banner style
+                                                                        02</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="page-banner-style-3.html">Banner style
+                                                                        03</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-others-menu" role="tabpanel" aria-labelledby="v-others-menu-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list w_100">
+                                                                <li>
+                                                                    <a href="book-listing.html">Book Listing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="about.html">About</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="contact.html">Contact Us</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="terms-condition.html">Terms & Services</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="shop.html">Shop</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop-no-sidebar.html">Shop No Sidebar</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="product-single.html">Product Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="cart.html">Cart</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="cart-guest.html">Cart Guest</a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="checkout.html">Checkout</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="checkout-gift.html">Checkout Gift</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="checkout-login.html">Checkout Login</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="my-wishlist.html">Wishlist</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-code" role="tabpanel" aria-labelledby="v-pills-code-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="my-account.html">User Profile</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-orders.html">Orders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="order-track.html">Order Tracking</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="order-confrmation.html">Thank You Page</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-ebook-library.html">Ebook Library</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-following-authors.html">Following
+                                                                        Authors</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-rating-reviews.html">Rating &
+                                                                        Authors</a>
+                                                                </li>
+
+                                                            </ul>
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="my-list.html">Book List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-list-details.html">Book List Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-list-create.html">Create Book List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-address.html">Address Book</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="add-new-address.html">Add New Address</a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-layout" role="tabpanel" aria-labelledby="v-pills-layout-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="blog-grid.html">Blog Grid</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-extend-grid.html">Extended Grid</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-list.html">Blog List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-details.html">Blog Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="author.html">Author</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="author-single.html">Author Single</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="blog-list.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Blog
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog-grid.html" class="nav-link">Blog Grid</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-extend-grid.html" class="nav-link">Extended Grid</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-list.html" class="nav-link">Blog List</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="alter_nav">
+                            <ul class="navbar-nav search_cart menu">
+                                <li class="nav-item search"><a class="nav-link search-btn" href="javascript:void(0);"><i class="ti-search"></i></a>
+                                    <form action="#" method="get" class="menu-search-form">
+                                        <div class="input-group">
+                                            <input type="search" class="form-control" placeholder="Search here..">
+                                            <button type="submit"><i class="ti-arrow-right"></i></button>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li class="nav-item shpping-cart dropdown submenu">
+                                    <a class="cart-btn nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ti-shopping-cart"></i><span class="num total-cart-count">2</span></a>
+                                    <div class="dropdown-menu">
+                                        <ul class="cart-dropdown list-unstyled">
+                                            <li class="cart-single-item clearfix">
+                                                <div class="cart-img">
+                                                    <img src="assets/img/cart1.jpg" alt="styler">
+                                                </div>
+                                                <div class="cart-content text-left">
+                                                    <p class="cart-title"><a href="#">Pale pink and black buttoned
+                                                            dress</a>
+                                                    </p>
+                                                    <p><del>$400.00</del> - $350.00</p>
+                                                </div>
+                                                <div class="cart-remove">
+                                                    <a href="#" class="action"><span class="ti-close"></span></a>
+                                                </div>
+                                            </li>
+                                            <li class="cart-single-item clearfix">
+                                                <div class="cart-img">
+                                                    <img src="assets/img/cart1.jpg" alt="styler">
+                                                </div>
+                                                <div class="cart-content text-left">
+                                                    <p class="cart-title"><a href="#">Vera bradley lug- gage large
+                                                            duffel</a>
+                                                    </p>
+                                                    <p>$350.00</p>
+                                                </div>
+                                                <div class="cart-remove">
+                                                    <a href="#" class="action"><span class="ti-close"></span></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="cart_f">
+                                            <div class="cart-pricing">
+                                                <p class="total">Subtotal :<span class="p-total text-end">$<span class="total-cart-amount"></span></span>
+                                                </p>
+                                            </div>
+                                            <div class="cart-button text-center">
+                                                <a href="cart.html" class="btn btn-cart get_btn pink">View Cart</a>
+                                                <a href="checkout.html" class="btn btn-cart get_btn dark">Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="bj_theme_btn strock_btn hidden-sm hidden-xs" href="login.html"><i class="fa-regular fa-user"></i>Login</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="cart-header-separator"></div>
+
+        <!-- Dashboard area -->
+        <section class="bj_account_dashboard" data-bg-color="#f5f5f5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="account_dashboard_sidebar">
+                            <div class="sidebar_widget_body d-flex account_dashboard_sidebar_profile">
+                                <div class="">
+                                    <img src="assets/img/profile-img.png" alt="account">
+                                </div>
+                                <div class="">
+                                    <div class="greetings">Hello</div>
+                                    <div class="name">Muaz BK</div>
+
+                                </div>
+                            </div>
+                            <div class="sidebar_widget_body p-0">
+                                <ul class="sidebar_widget_menu">
+                                    <li><a href="my-account.html">My Profile</a></li>
+                                    <li><a href="my-address.html">My Address</a></li>
+                                    <li><a href="my-orders.html">My Orders</a></li>
+                                    <li><a href="my-ebook-library.html">My eBook Library </a></li>
+                                    <li><a class="active" href="my-list.html">My list</a></li>
+                                    <li><a href="my-wishlist.html">My Wishlist</a></li>
+                                    <li><a href="my-rating-reviews.html">My Rating & Reviews</a></li>
+                                    <li><a href="my-following-authors.html">My Following Authors</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="account_dashboard_body">
+                            <div class="account_dashboard_content">
+                                <div class="account_dashboard_content_header">
+                                    Create A New List
+                                </div>
+                                <div class="content_body">
+                                    <form action="#">
+                                        <div class="row gy-3">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="name">List Title: *</label>
+                                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your list Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="form-label">List Type: *</label>
+                                                    <div class="d-flex flex-row">
+                                                        <div class="form-check me-3">
+                                                            <input class="form-check-input" type="radio" value="" id="list_public" name="list_type">
+                                                            <label class="form-check-label mb-0" for="list_public">
+                                                                Public
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" value="" id="list_private" name="list_type">
+                                                            <label class="form-check-label mb-0" for="list_private">
+                                                                Private
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group ">
+                                                    <label class="form-label">List Description:</label>
+                                                    <textarea class="form-control py-3" rows="3" placeholder="write something about your list"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="form-label">Add Product: *</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Your Book Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                        <span class="input-group-text" id="basic-addon2"><img src="assets/img/cart/my_list_create.webp" alt=""></span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead class="bg-light">
+                                                            <tr>
+                                                                <th scope="col">SL</th>
+                                                                <th scope="col">Title</th>
+                                                                <th scope="col">Author</th>
+                                                                <th scope="col">Category</th>
+                                                                <th scope="col"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td><a href="#">Mindset</a></td>
+                                                                <td>Carol S. Dewick</td>
+                                                                <td>Translation: Self-development and meditation</td>
+                                                                <td><button class="remove_btn"><i class="ti-trash"></i></button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td><a href="#">Mindset</a></td>
+                                                                <td>Carol S. Dewick</td>
+                                                                <td>Translation: Self-development and meditation</td>
+                                                                <td><button class="remove_btn"><i class="ti-trash"></i></button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                    <button type="submit" class="bj_theme_btn">Save List</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Dashboard area -->
+
+
+        <!-- footer area -->
+        <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#212833">
+            <div class="container">
+                <div class="footer_top">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="f_widget link_widget pe-4">
+                                <a href="#" class="f_logo">
+                                    <img src="assets/img/home/logo-white.svg" alt="f_logo">
+                                </a>
+                                <div class="footer_subscribes">
+                                    <h2 class="f_widget_title">Subscribe Now</h2>
+                                    <form action="#">
+                                        <div class="footer_subscribe_form">
+                                            <input type="text" placeholder="Enter your Email" class="form-control">
+                                            <button type="submit" class="bj_theme_btn">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Company</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="blog-grid.html">Blog</a></li>
+                                    <li><a href="author.html">Author</a></li>
+                                    <li><a href="book-listing.html">Books</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Services</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="my-orders.html">Order</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="my-wishlist.html">Wishlist</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Pages</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="registration.html">Register</a></li>
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="404.html">404 Page</a></li>
+                                    <li><a href="my-ebook-library.html">Ebook Library</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Contacs Us</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="tel:610383766284"><i class="fa-solid fa-phone-volume"></i>+61 (0) 3
+                                            8376 6284</a></li>
+                                    <li><a href="mailto:noreply@bookjar.com"><i class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li>
+                                </ul>
+                                <ul class="list-unstyled f_social_round">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom d-flex  justify-content-center">
+                    <p>© 2024 Bookjar. All Rights <a href="https://www.bootstrapmb.com">bootstrapMB</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/parallax/parallax.js"></script>
+    <script src="assets/vendors/wow/wow.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

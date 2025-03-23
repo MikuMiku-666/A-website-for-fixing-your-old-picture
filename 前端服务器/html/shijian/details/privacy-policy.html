@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendors/elagent-icon/style.css" rel="stylesheet">
+    <link href="assets/vendors/font-awesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendors/icomoon/style.css" rel="stylesheet">
+    <link href="assets/vendors/themify-icon/themify-icons.css" rel="stylesheet">
+    <link href="assets/vendors/animation/animate.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <title>Bookjar</title>
+</head>
+
+<body data-scroll-animation="true">
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="assets/img/favicon.png" alt="Image">
+                    <h4><span>Bookjar</span></h4>
+                </div>
+            </div>
+            <h2 class="head">Did You Know?</h2>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="body_wrapper">
+
+        <div class="toast-container position-fixed p-3">
+            <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Cart Update</strong>
+                    <small>just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Item added to the cart!
+                </div>
+            </div>
+        </div>
+
+        <header class="header_area header_relative">
+            <nav class="navbar navbar-expand-lg menu_one" id="header">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/home-two/logo-dark.svg" alt="logo"></a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="hamburger-cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu w_menu ms-auto me-auto">
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    HOME
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link">Home One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-2.html" class="nav-link">Home Two</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-3.html" class="nav-link">Home Three</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-4.html" class="nav-link">Home Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Shop
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Shop
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="shop.html" class="nav-link">Shop</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="shop-no-sidebar.html" class="nav-link">Shop No Sidebar</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="product-single.html" class="nav-link">Product Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="cart.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Cart
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="cart.html" class="nav-link">Cart</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="cart-guest.html" class="nav-link">Cart Guest</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="checkout.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Checkout
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="checkout.html" class="nav-link">Checkout</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout-login.html" class="nav-link">Checkout Login</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout-gift.html" class="nav-link">Checkout Gift</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="my-account.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dashboard
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">User Profile</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="my-orders.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Orders
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="my-orders.html" class="nav-link">Orders</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="order-track.html" class="nav-link">Order Tracking</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="order-confrmation.html" class="nav-link">Thank You Page</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="my-ebook-library.html" class="nav-link">Ebook Library</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="my-list.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Book List
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="my-list.html" class="nav-link">Book List</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="my-list-details.html" class="nav-link">Book List Details</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="my-list-create.html" class="nav-link">Create Book List</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="my-address.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Address Book
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="my-address.html" class="nav-link">Address Book</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="add-new-address.html" class="nav-link">Add New Address</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="my-following-authors.html" class="nav-link">Following Authors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="my-rating-reviews.html" class="nav-link">Rating & Reviews</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="my-wishlist.html" class="nav-link">Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu mega_menu tab-demo active">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore
+                                </a>
+                                <ul class="dropdown-menu sub">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-5 tabHeader">
+                                                <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill" href="#v-pills-tour" role="tab" aria-controls="v-pills-tour" aria-selected="false">Utility Pages</a>
+                                                    </li>
+                                                    <li class="nav-item active">
+                                                        <a class="nav-link" id="v-others-menu-tab" data-toggle="pill" href="#v-others-menu" role="tab" aria-controls="v-others-menu" aria-selected="false">Company</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-doc-tab" data-toggle="pill" href="#v-pills-doc" role="tab" aria-controls="v-pills-doc" aria-selected="true">Shop Pages</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-code-tab" data-toggle="pill" href="#v-pills-code" role="tab" aria-controls="v-pills-code" aria-selected="false">Dashboard</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#v-pills-layout" role="tab" aria-controls="v-pills-layout" aria-selected="false">Blog & Author</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="tab-content tabContent" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade" id="v-pills-tour" role="tabpanel" aria-labelledby="v-pills-tour-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list w_100">
+                                                                <li>
+                                                                    <a href="login.html">Sign In</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="registration.html">Sign Up</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="typography.html">Typography</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="page-banner-style-2.html">Banner style
+                                                                        02</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="page-banner-style-3.html">Banner style
+                                                                        03</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade active show" id="v-others-menu" role="tabpanel" aria-labelledby="v-others-menu-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list w_100">
+                                                                <li>
+                                                                    <a href="book-listing.html">Book Listing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="about.html">About</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="contact.html">Contact Us</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="terms-condition.html">Terms & Services</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="active" href="privacy-policy.html">Privacy Policy</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="shop.html">Shop</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop-no-sidebar.html">Shop No Sidebar</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="product-single.html">Product Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="cart.html">Cart</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="cart-guest.html">Cart Guest</a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="checkout.html">Checkout</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="checkout-gift.html">Checkout Gift</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="checkout-login.html">Checkout Login</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="my-wishlist.html">Wishlist</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-code" role="tabpanel" aria-labelledby="v-pills-code-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="my-account.html">User Profile</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-orders.html">Orders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="order-track.html">Order Tracking</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="order-confrmation.html">Thank You Page</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-ebook-library.html">Ebook Library</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-following-authors.html">Following
+                                                                        Authors</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-rating-reviews.html">Rating &
+                                                                        Authors</a>
+                                                                </li>
+
+                                                            </ul>
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="my-list.html">Book List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-list-details.html">Book List Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-list-create.html">Create Book List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-address.html">Address Book</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="add-new-address.html">Add New Address</a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-layout" role="tabpanel" aria-labelledby="v-pills-layout-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="blog-grid.html">Blog Grid</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-extend-grid.html">Extended Grid</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-list.html">Blog List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-details.html">Blog Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="author.html">Author</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="author-single.html">Author Single</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="blog-list.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Blog
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog-grid.html" class="nav-link">Blog Grid</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-extend-grid.html" class="nav-link">Extended Grid</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-list.html" class="nav-link">Blog List</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="alter_nav">
+                            <ul class="navbar-nav search_cart menu">
+                                <li class="nav-item search"><a class="nav-link search-btn" href="javascript:void(0);"><i class="ti-search"></i></a>
+                                    <form action="#" method="get" class="menu-search-form">
+                                        <div class="input-group">
+                                            <input type="search" class="form-control" placeholder="Search here..">
+                                            <button type="submit"><i class="ti-arrow-right"></i></button>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li class="nav-item shpping-cart dropdown submenu">
+                                    <a class="cart-btn nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ti-shopping-cart"></i><span class="num total-cart-count">2</span></a>
+                                    <div class="dropdown-menu">
+                                        <ul class="cart-dropdown list-unstyled">
+                                            <li class="cart-single-item clearfix">
+                                                <div class="cart-img">
+                                                    <img src="assets/img/cart1.jpg" alt="styler">
+                                                </div>
+                                                <div class="cart-content text-left">
+                                                    <p class="cart-title"><a href="#">Pale pink and black buttoned
+                                                            dress</a>
+                                                    </p>
+                                                    <p><del>$400.00</del> - $350.00</p>
+                                                </div>
+                                                <div class="cart-remove">
+                                                    <a href="#" class="action"><span class="ti-close"></span></a>
+                                                </div>
+                                            </li>
+                                            <li class="cart-single-item clearfix">
+                                                <div class="cart-img">
+                                                    <img src="assets/img/cart1.jpg" alt="styler">
+                                                </div>
+                                                <div class="cart-content text-left">
+                                                    <p class="cart-title"><a href="#">Vera bradley lug- gage large
+                                                            duffel</a>
+                                                    </p>
+                                                    <p>$350.00</p>
+                                                </div>
+                                                <div class="cart-remove">
+                                                    <a href="#" class="action"><span class="ti-close"></span></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="cart_f">
+                                            <div class="cart-pricing">
+                                                <p class="total">Subtotal :<span class="p-total text-end">$<span class="total-cart-amount"></span></span>
+                                                </p>
+                                            </div>
+                                            <div class="cart-button text-center">
+                                                <a href="cart.html" class="btn btn-cart get_btn pink">View Cart</a>
+                                                <a href="checkout.html" class="btn btn-cart get_btn dark">Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="bj_theme_btn strock_btn hidden-sm hidden-xs" href="login.html"><i class="fa-regular fa-user"></i>Login</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- breadcrumb area  -->
+        <section class="bj_breadcrumb_area text-center banner_animation_03" data-bg-color="#f5f5f5">
+            <div class="bg_one" data-bg-image="assets/img/breadcrumb/breadcrumb_banner_bg.png"></div>
+            <div class="bd_shape one wow fadeInDown layer" data-wow-delay="0.3s" data-depth="0.5"><img data-parallax='{"y": -50}' src="assets/img/breadcrumb/book_left1.png" alt="">
+            </div>
+            <div class="bd_shape two wow fadeInUp layer" data-depth="0.6" data-wow-delay="0.4s"><img data-parallax='{"y": 30}' src="assets/img/breadcrumb/book-left2.png" alt="">
+            </div>
+            <div class="bd_shape three wow fadeInDown layer" data-wow-delay="0.3s" data-depth="0.5"><img data-parallax='{"y": -50}' src="assets/img/breadcrumb/plane-1.png" alt="">
+            </div>
+            <div class="bd_shape four wow fadeInUp layer" data-depth="0.6" data-wow-delay="0.4s"><img data-parallax='{"y": 30}' src="assets/img/breadcrumb/plan-3.png" alt="">
+            </div>
+            <div class="bd_shape five wow fadeInUp layer" data-depth="0.6" data-wow-delay="0.4s"><img data-parallax='{"y": 80}' src="assets/img/breadcrumb/plan-2.png" alt="">
+            </div>
+            <div class="bd_shape six wow fadeInDown layer" data-wow-delay="0.3s" data-depth="0.5"><img data-parallax='{"y": -60}' src="assets/img/breadcrumb/book-right.png" alt="">
+            </div>
+            <div class="bd_shape seven wow fadeInUp layer" data-depth="0.6" data-wow-delay="0.4s"><img data-parallax='{"x": 50}' src="assets/img/breadcrumb/book-right2.png" alt="">
+            </div>
+            <div class="container">
+                <h2 class="title">Privacy Policy</h2>
+
+            </div>
+        </section>
+        <!-- breadcrumb area  -->
+
+        <!-- author single area  -->
+        <div class="sec_padding bj_privacy_policy" data-bg-color="#f5f5f5">
+            <div class="container">
+                <div class="page-area">
+
+                    <h3>Spider-Themes Privacy Policy &amp; Data Collection (GDPR) Disclosure</h3>
+
+
+
+                    <p><strong>Last Revision Date: 31 October 202</strong>4</p>
+
+
+
+                    <p>At Spider-Themes, we respect and recognize our users’ right to privacy and their right to know how and why we collect, use, protect, and disclose their personal information.</p>
+
+
+
+                    <h3 id="a-accountability">&nbsp;A. Accountability&nbsp;</h3>
+
+
+
+                    <p>Spider-Themes (“Spider-Themes”, “we”, “us”, “our”) provides industry-leading themes &amp; plugins to help web developers and website owners/operators quickly and easily build professional WordPress websites. Our clients are mostly experienced website creators or operators who are familiar with the hows and whys of privacy rules. </p>
+
+
+
+                    <p>We collect information about the content of the privacy policy and the operation of cookies and related technologies. However, users do not require any special knowledge or experience to understand this policy. </p>
+
+
+
+                    <p>This Privacy Policy outlines how we collect, use, disclose, protect, and dispose of personal information, as well as the rights that customers have regarding their information.</p>
+
+
+
+                    <h3 id="b-personal-information">&nbsp;B. Personal Information&nbsp;</h3>
+
+
+
+                    <p>Two types of personal information are protected by privacy rights.</p>
+
+
+
+                    <p>The first is information that identifies a specific person (alone or&nbsp;in combination with&nbsp;other information).</p>
+
+
+
+                    <p>A person’s name is personal information if it is unique. An individual’s name combined with a second piece of information is an example of personal information if it is not unique (and most people’s names are not). Home Address Email Address Phone Number Social Media Identifier Age Nickname Detailed description of physical characteristics The neighborhood the person lives in
+                        Where they went to school and their medical history are examples of personally identifiable information that when combined with a name or other information can constitute a Personal Information identifier.</p>
+
+
+
+                    <p>Another type of protected personal information is information of any personal nature about an identifiable individual.</p>
+
+
+
+                    <p>Examples of such personal information include:</p>
+
+
+
+                    <ul>
+                        <li>The person’s race, national or ethnic origin, color, religion, age, sex, sexual orientation, or marital or family status.</li>
+
+
+
+                        <li>The&nbsp;person’s education or medical psychiatry psychological criminal or employment history.</li>
+
+
+
+                        <li>The person’s financial situation or information relating to financial transactions in which the person is involved.</li>
+
+
+
+                        <li>The&nbsp;person’s social security number or other unique number or identifier assigned to them.</li>
+
+
+
+                        <li>The&nbsp;person’s fingerprints or blood type.</li>
+
+
+
+                        <li>An individual’s&nbsp;personal opinion&nbsp;or perspective on a social or political issue.</li>
+
+
+
+                        <li>The&nbsp;perception or opinion of others about the person.</li>
+
+
+
+                        <li>In general, any information that could prove embarrassing or damaging to an individual’s reputation, or that no reasonable person would want to make public.</li>
+                    </ul>
+
+
+
+                    <h3 id="c-personal-information-we-collect">C. Personal Information We Collect</h3>
+
+
+
+                    <p>Due to the nature of our business and the reasons why customers visit our website and transact with us, the personal information we collect and use is limited to:</p>
+
+
+
+                    <ul>
+                        <li>Customer identification information is required for customers to create an account to purchase our products and receive our services: name, email address, password and avatar.</li>
+
+
+
+                        <li>Information needed to communicate with customers: Name Email Address Phone Number WhatsApp Skype or similar ID and/or Social Media Messaging Service.</li>
+
+
+
+                        <li>Information&nbsp;that helps us improve our products, services, websites, and business processes.</li>
+
+
+
+                        <li>Information for conducting customer relationship audits management programs and marketing activities, including identifying product improvements and additional products or services that may be of interest to customers.</li>
+
+
+
+                        <li>Information that helps us better manage and improve our customers’ overall relationship with us, so they can continue to do business with us, including improving the user experience on our website.</li>
+
+
+
+                        <li>Regarding&nbsp;points four to six in this list, please refer specifically to the information in the “Other Information We Collect” section of this policy</li>
+                    </ul>
+
+
+
+                    <h3 id="d-why-we-collect-personal-information-and-your-consent">D. Why we collect personal information and your consent</h3>
+
+
+
+                    <p>We collect personal information to:</p>
+
+
+
+                    <ul>
+                        <li>Our websites function according to users’ expectations and provide users with a personalized experience.</li>
+
+
+
+                        <li>Customers can purchase our products and services.</li>
+
+
+
+                        <li>We&nbsp;can perform our contractual obligations to our customers and take the necessary steps to enter into contracts with our customers.</li>
+
+
+
+                        <li>For&nbsp;other reasons described in this policy.</li>
+                    </ul>
+
+
+
+                    <p>Examples of fulfilling our contractual obligations to customers include providing product updates and priority ticket support.</p>
+
+
+
+                    <p>We collect personal and non-personal information to operate our business and our website. We need this information to ensure that our products meet the changing needs of our customers and that the design and navigation of our website are optimized to provide the best customer experience.</p>
+
+
+
+                    <p>Examples&nbsp;of the types of information we collect for these purposes and how we collect this information can be found in the Other Information We Collect section.</p>
+
+
+
+                    <p>In all cases, we only collect personal information for the purposes outlined in this policy. We do not collect personal information for any other purpose, i.e. we do not collect personal information that is not required for customers to purchase our products for us to communicate with&nbsp;customers&nbsp;This includes providing product updates and support for operations and
+                        business. (e.g. keeping appropriate records) and to improve our products and services and website (i.e. legitimate business purposes).</p>
+
+
+
+                    <p>spider-themes is a B2B company. Therefore, we do not conduct business with or collect personal information from minors (children). If you are under the age of majority where you reside, you may not (1) enter any personal information in any form on this site (2) provide personal information In any other way (3) transact or attempt to transact with spider-themes, or (4)
+                        continue browsing the Site.</p>
+
+
+
+                    <p>By&nbsp;entering into a contract with Spider-Themes (i.e. purchasing a product or service), you consent to our collection and use of personal information as described in this policy.</p>
+
+
+
+                    <p>By browsing our website, you agree to our collection and use of personal and non-personal information arising from your use as described in this policy.</p>
+
+
+
+                    <p>If you do not want us to collect or use personal information, please do not browse our website or purchase our products or services. If you cannot find an acceptable substitute for our product or service and have no choice but to buy from us but still do not wish to provide it to&nbsp;us&nbsp;Personal&nbsp;Information&nbsp;You Can Contact Us at:&nbsp;<a class="docs-creator"
+                            href="mailto:contact@spider-themes.net">contact@spider-themes.net</a>.&nbsp;Discuss&nbsp;whether and how this can be achieved.</p>
+
+
+
+                    <p>If you object to our collection of information while visiting our website, please contact us at&nbsp;<a class="docs-creator" href="mailto:contact@spider-themes.net">contact@spider-themes.net</a>. We&nbsp;will use commercially reasonable efforts to delete and permanently destroy any personal information collected before you express your wishes. Non-personal (anonymous)
+                        information will not be deleted.</p>
+
+
+
+                    <p>If you contact us via the forms on this website, you consent to our collection and use of the personal information you provide. Likewise, if you contact us by any other means, you agree to our collection and use of the personal information you provide. This use may include email marketing You can unsubscribe.</p>
+
+
+
+                    <p>We will first obtain your consent if we wish to use your personal information for any purpose other than those described in this policy.</p>
+
+
+
+                    <h3 id="e-internal-access-to-personal-information">E. Internal Access to Personal Information</h3>
+
+
+
+                    <p>Access to personal information is limited to those spider-themes employees who need the personal information to develop and provide our products and services. Personal information provided to employees is limited to the information they need to do their jobs.</p>
+
+
+
+                    <p>We may share personal information with companies that are affiliated with Spider-Themes. If we do so, we will require those companies to abide by this policy. Affiliates include the parent company and any subsidiaries, joint venture partners, and other companies controlled or under common control by us.</p>
+
+
+
+                    <p>If a third-party contractor has or may have access to personal information, we require that contractor to share its confidentiality with us. An IT contractor providing system maintenance is an example of a third party who may have access to personal information&nbsp;in the course of&nbsp;providing services to&nbsp;serve&nbsp;us. Other third-party services that may involve
+                        access to confidential information include payment processing, customer service, data analysis, hosting services, marketing and product development. Certain third-party contractors to whom we provide personal information are Other Information We Collect Section.</p>
+
+
+
+                    <h3 id="f-external-disclosure-of-personal-information">F. External disclosure of personal information</h3>
+
+
+
+                    <p>Except as disclosed in this policy, spider-themes will not disclose personal information to third parties, except where a reasonable person would expect such disclosure. For example, if we engage a third party to provide customer support (such as a live help desk) service.</p>
+
+
+
+                    <p>spider-themes may disclose personal information in response to a court order or when required by law enforcement, such as receipt of a subpoena or subpoena. Unless prohibited by law, we will first attempt to inform customers that we have received an order or instruction to disclose personal information This allows customers to dispute orders as they see fit.</p>
+
+
+
+                    <p>We disclose personal information to relevant authorities as necessary to report criminal or possible criminal activity, including fraud against us or one of our clients, or generally to protect our clients and their property, including their knowledge of property rights) security.&nbsp;You&nbsp;agree to our reasonable exercise of discretion in such matters.</p>
+
+
+
+                    <p>We&nbsp;do not sell the personal information&nbsp;of&nbsp;our customers.</p>
+
+
+
+                    <h3 id="g-retention-of-personal-information">G. Retention of Personal Information</h3>
+
+
+
+                    <p>We retain personal information indefinitely so that customers can upgrade products they have already purchased or purchase products or services in the future. This also enables us to provide continuous product updates and support.</p>
+
+
+
+                    <p>When we handle personal information, we do so in a manner that prevents invasion of privacy by securely shredding paper documents and completely and permanently deleting electronic records. Any information kept purely for statistical purposes will be anonymized and will no longer be personal&nbsp;information.</p>
+
+
+
+                    <p>We&nbsp;will process personal information if the customer instructs us to do so. Please contact us&nbsp;<a href="mailto:contact@spider-themes.net">contact@spider-themes.net</a>&nbsp;if you wish to have your personal information deleted from our records.</p>
+
+
+
+                    <h3 id="h-accuracy-of-personal-information">H. Accuracy of Personal Information</h3>
+
+
+
+                    <p>We make commercially reasonable efforts to keep personal information accurate, complete, and up to date.</p>
+
+
+
+                    <p>To this end, we may from time to time ask customers to confirm/update information. We are not responsible for inaccurate or incomplete information if customers fail to update us promptly.</p>
+
+
+
+                    <h3 id="i-safeguards">&nbsp;I. Safeguards&nbsp;</h3>
+
+
+
+                    <p>We use industry-standard executive electronic (&nbsp;HTTP over TLS encryption)&nbsp;and physical security measures to prevent unauthorized access to your personal information.</p>
+
+
+
+                    <h3 id="j-data-breaches">&nbsp;J. Data Breaches&nbsp;</h3>
+
+
+
+                    <p>While we take commercially reasonable steps to protect personal information, no security measures are perfect or impenetrable, and no method of data storage or transmission can be guaranteed to be free from any interception or other misuse. In particular, any information stored online is vulnerable to Interception and Misuse by Unauthorized Parties.</p>
+
+
+
+                    <p>In&nbsp;the event of a data breach that presents a real risk of significant harm to customers, we will take the following steps:</p>
+
+
+
+                    <ul>
+                        <li>Notify customers of the breach if their personal information has been or may have been accessed or compromised.</li>
+
+
+
+                        <li>Inform&nbsp;customers if know that specific personal information has been or may have been accessed or affected.</li>
+
+
+
+                        <li>Inform customers of steps they can take to reduce the risk of harm from a breach, such as changing passwords or monitoring accounts.</li>
+
+
+
+                        <li>Notify&nbsp;customers when the breach has been resolved and data risk has been reduced.</li>
+
+
+
+                        <li>If&nbsp;required by law, notify the applicable government authority of the violation.</li>
+                    </ul>
+
+
+
+                    <h3 id="k-your-access-to-personal-information">K. Your Access to Personal Information</h3>
+
+
+
+                    <p>You have the right to know your personal information in our records.</p>
+
+
+
+                    <p>If&nbsp;you would like a copy of your personal information, please contact us at&nbsp;<a href="mailto:contact@spider-themes.net">contact@spider-themes.net</a>.&nbsp;</p>
+
+
+
+                    <p>If any of your personal information is inaccurate or incomplete, please let us know and we will correct it.</p>
+
+
+
+                    <h3 id="l-compliance">&nbsp;L. Compliance&nbsp;</h3>
+
+
+
+                    <p>spider-themes offers its products and services to anyone with Internet access to build or develop a website. All or nearly all countries in the world have websites. We have customers in many of these countries.</p>
+
+
+
+                    <p>We have made commercially reasonable efforts to develop a Privacy Policy that complies with the laws of all jurisdictions and contains special provisions to comply with certain regulatory requirements in the state of California (California Online Privacy Protection Act “CalOPPA”) Countries in the European Economic Area (GDPR) and the United Kingdom (“UK GDPR”).</p>
+
+
+
+                    <p>If you believe that we are not processing your personal information as required by the privacy legislation in your country, please first raise your concern to us by&nbsp;<a href="mailto:contact@spider-themes.net">contact@spider-themes.net</a>.&nbsp;</p>
+
+
+
+                    <p>You have the right to a fair and impartial review of your concerns in accordance with the laws and regulations that apply to you and to be informed of the outcome of that review and any steps are taken to address your concerns, including any amendments to this policy or any changes to our practices They are for customers in your country.</p>
+
+
+
+                    <h3 id="m-privacy-compliance-officer-spider-themes">M. Privacy Compliance Officer, Spider-Themes</h3>
+
+
+
+                    <p>Spider-Themes has designated an appropriate officer to serve as its Privacy Compliance Officer. The Privacy Compliance Officer is empowered to ensure compliance with Spider-Themes’s obligations to keep personal information confidential.</p>
+
+
+
+                    <p>&nbsp;Contact us at&nbsp;<a href="mailto:contact@spider-themes.net">contact@spider-themes.net</a>.&nbsp;</p>
+
+
+
+                    <h3 id="n-other-information-we-collect">N. Other Information We Collect</h3>
+
+
+
+                    <p>We collect information each time a user visits our website or otherwise communicates with us electronically. This information may relate to a user’s preference or device and is primarily used to make our website work the way the user expects. This information generally does not personally identify&nbsp;users&nbsp;(although it might), but it does allow for a more personalized
+                        web experience.</p>
+
+
+
+                    <p>Examples of information we collect or may collect include the date and time of visit or connection, the user’s browser type, the user’s Internet service provider, and the IP addresses of sites the user visited before or after our website (“navigation history” refers to website”) and the pages on our website that have been viewed.&nbsp;In isolation, a single piece of this
+                        information does not necessarily identify a user, but in some cases, it can be used&nbsp;in combination with&nbsp;other information to identify an individual user, especially if the user sends We have provided personal&nbsp;information&nbsp;when they visit or connect.</p>
+
+
+
+                    <p>In addition to using this information to optimize our website, we use this information for our internal security audits, log usage and trend analysis, system administration, and gather general demographic information about our user base for market identification and correlation purposes.&nbsp;purpose, including how Customers&nbsp;use&nbsp;our products. We share this
+                        information (including Personal Information) with third parties who provide services to us, including analytical storage and data aggregation/organization services.</p>
+
+
+
+                    <p>Because such information can be used to identify an individual, we treat it as personal information. This means we only use it for the legitimate purposes of operating our business and advancing our commercially reasonable business objectives, including understanding how customers&nbsp;use&nbsp;our products.&nbsp;us&nbsp;Do&nbsp;not use it for any other purpose.</p>
+
+
+
+                    <p>By using our website or otherwise communicating electronically with us, you acknowledge that you understand that we collect information&nbsp;of&nbsp;the nature described. If you object to our collection of such information, please do not use our website or contact us electronically.</p>
+
+
+
+                    <p><em>&nbsp;<strong>Cookies</strong>&nbsp;</em></p>
+
+
+
+                    <p>Cookies are small text files that a website places on a user’s computer. They are widely used to allow websites to function properly and be more user-friendly. Remember user preferences, improve user experience, and provide website owners with information that can be used legally.&nbsp;purposes&nbsp;in its business. A description of what cookies are and how they work can be
+                        found here.&nbsp;</p>
+
+
+
+                    <p><em><strong>We use cookies for all the reasons listed.</strong></em></p>
+
+
+
+                    <p>Some cookies placed on our website are from third-party companies that provide us with analytics and other services. The information collected helps us understand how users interact with our website and, in some cases, our products so that we can identify new products improve existing products, and add value to our customers (e.g. upgrades).</p>
+
+
+
+                    <p><em><strong>Google Analytics and Google Search Console</strong></em></p>
+
+
+
+                    <p>We use Google Analytics. Google (Alphabet Inc.) uses cookies to help us better understand how our site is used, including user session statistics (pages visited and how long a user remains on the site), approximate geographic location, and browser and device information.</p>
+
+
+
+                    <p>We also use Google Search Console, a tool that provides data about search engines and helps us optimize traffic to our website. Examples of search engine-related data include user queries the number of times our website URL appears in search results (impressions) and post-click data about the website Engagement, such as bounce rate and e-commerce conversion rate.</p>
+
+
+
+                    <p>It is Google’s policy not to pass any data to Google that could be used or recognized by Google as personal information. More information on Google’s policies can be found here.</p>
+
+
+
+                    <p><strong><em>Other Service Providers</em></strong></p>
+
+
+
+                    <p>In addition to Google, the following companies also provide services for us:</p>
+
+
+
+                    <ul>
+                        <li><a href="https://brixly.uk/gdpr-compliance" data-type="URL" data-id="https://brixly.uk/gdpr-compliance" target="_blank" rel="noreferrer noopener nofollow">Brixly</a> is our web hosting. Brixly complies with the EU/US Privacy Shield, ensuring data is stored securely and GDPR compliant.</li>
+
+
+
+                        <li><a href="https://www.envato.com/privacy/" target="_blank" data-type="URL" data-id="https://www.envato.com/privacy/" rel="noreferrer noopener nofollow">Envato</a> We offer WordPress Themes (Themeforset) for sale on the Envato Marketplace. Envato is a payment processor and payments for some of our products are made on this website.</li>
+
+
+
+                        <li><a href="https://freemius.com/privacy/" data-type="URL" data-id="https://freemius.com/privacy/" target="_blank" rel="noreferrer noopener nofollow">Freemius</a> Premium versions of our plugins are stored together with this service. Freemius is a payment processor and license management system for our plugins. </li>
+
+
+
+                        <li><a href="https://support.google.com/analytics/topic/2919631" data-type="URL" data-id="https://statcounter.com/about/legal/" target="_blank" rel="noreferrer noopener nofollow">Google Analytics</a> We use Google Analytics for the analysis of user data and states.</li>
+                    </ul>
+
+
+
+                    <p>We provide personal information to these service providers. We acknowledge that we are ultimately responsible for the security of the personal information provided to us. We are satisfied that these providers properly protect and use lawfully the personal information in their possession. You can read each and learn about a company’s privacy policy and user data protection by
+                        clicking on their name.</p>
+
+
+
+                    <p><em><strong>&zwj;</strong></em><strong><em>&zwj;Managing Cookies Settings</em></strong></p>
+
+
+
+                    <p>You can manage your cookie settings to clear or block specific cookies or all cookies. However, if you block all cookies we use, it may affect your user experience or make the website unusable. You can access your cookie settings through your browser settings. Please note that if you clear all cookies, your site preferences will be lost.</p>
+
+
+
+                    <h3 id="o-amendments-to-this-privacy-policy">O. Amendments to this Privacy Policy</h3>
+
+
+
+                    <p>We may revise this Privacy Policy from time to time. If the last revision date is after the last time you read it, please review this policy again. By continuing to use our website and/or purchasing products or services from us, you agree to the collection, use, and disclosure of your personal information by this policy.</p>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- author single area  -->
+
+        <!-- footer area css  -->
+        <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#212833">
+            <div class="container">
+                <div class="footer_top">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="f_widget link_widget pe-4">
+                                <a href="#" class="f_logo">
+                                    <img src="assets/img/home/logo-white.svg" alt="f_logo">
+                                </a>
+                                <div class="footer_subscribes">
+                                    <h2 class="f_widget_title">Subscribe Now</h2>
+                                    <form action="#">
+                                        <div class="footer_subscribe_form">
+                                            <input type="text" placeholder="Enter your Email" class="form-control">
+                                            <button type="submit" class="bj_theme_btn">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Company</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="blog-grid.html">Blog</a></li>
+                                    <li><a href="author.html">Author</a></li>
+                                    <li><a href="book-listing.html">Books</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Services</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="my-orders.html">Order</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="my-wishlist.html">Wishlist</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Pages</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="registration.html">Register</a></li>
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="404.html">404 Page</a></li>
+                                    <li><a href="my-ebook-library.html">Ebook Library</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Contacs Us</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="tel:610383766284"><i class="fa-solid fa-phone-volume"></i>+61 (0) 3
+                                            8376 6284</a></li>
+                                    <li><a href="mailto:noreply@bookjar.com"><i class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li>
+                                </ul>
+                                <ul class="list-unstyled f_social_round">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom d-flex  justify-content-center">
+                    <p>© 2024 Bookjar. All Rights <a href="https://www.bootstrapmb.com">bootstrapMB</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/comming-soon.js"></script>
+    <script src="assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/parallax/parallax.js"></script>
+    <script src="assets/vendors/parallax/jquery.parallax-scroll.js"></script>
+    <script src="assets/vendors/wow/wow.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

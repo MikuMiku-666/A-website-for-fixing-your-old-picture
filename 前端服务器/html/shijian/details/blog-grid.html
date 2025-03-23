@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendors/slick/slick.css" rel="stylesheet">
+  <link href="assets/vendors/slick/slick-theme.css" rel="stylesheet">
+  <link href="assets/vendors/elagent-icon/style.css" rel="stylesheet">
+  <link href="assets/vendors/font-awesome/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendors/icomoon/style.css" rel="stylesheet">
+  <link href="assets/vendors/themify-icon/themify-icons.css" rel="stylesheet">
+  <link href="assets/vendors/animation/animate.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  <title>Bookjar</title>
+</head>
+
+<body data-scroll-animation="true">
+  <div id="preloader">
+    <div id="ctn-preloader" class="ctn-preloader">
+      <div class="round_spinner">
+        <div class="spinner"></div>
+        <div class="text">
+          <img src="assets/img/favicon.png" alt="Image">
+          <h4><span>Bookjar</span></h4>
+        </div>
+      </div>
+      <h2 class="head">Did You Know?</h2>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="body_wrapper">
+    <div class="toast-container position-fixed p-3">
+      <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Cart Update</strong>
+          <small>just now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Item added to the cart!
+        </div>
+      </div>
+    </div>
+
+    <header class="header_area header_relative">
+      <nav class="navbar navbar-expand-lg menu_one" id="header">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/home-two/logo-dark.svg" alt="logo"></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="menu_toggle">
+              <span class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span class="hamburger-cross">
+                <span></span>
+                <span></span>
+              </span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav menu w_menu ms-auto me-auto">
+              <li class="nav-item dropdown submenu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  HOME
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home One</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index-2.html" class="nav-link">Home Two</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index-3.html" class="nav-link">Home Three</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index-4.html" class="nav-link">Home Four</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown submenu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Shop
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li class="nav-item dropdown submenu">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link">Shop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop-no-sidebar.html" class="nav-link">Shop No Sidebar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="product-single.html" class="nav-link">Product Details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown submenu">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Cart
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="cart.html" class="nav-link">Cart</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="cart-guest.html" class="nav-link">Cart Guest</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown submenu">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Checkout
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="checkout.html" class="nav-link">Checkout</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="checkout-login.html" class="nav-link">Checkout Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="checkout-gift.html" class="nav-link">Checkout Gift</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown submenu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dashboard
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a href="my-account.html" class="nav-link">User Profile</a>
+                  </li>
+
+                  <li class="nav-item dropdown submenu">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Orders
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="my-orders.html" class="nav-link">Orders</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="order-track.html" class="nav-link">Order Tracking</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="my-ebook-library.html" class="nav-link">Ebook Library</a>
+                  </li>
+
+                  <li class="nav-item dropdown submenu">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Book List
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="my-list.html" class="nav-link">Book List</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="my-list-details.html" class="nav-link">Book List Details</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="my-list-create.html" class="nav-link">Create Book List</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown submenu">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Address Book
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="my-address.html" class="nav-link">Address Book</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="add-new-address.html" class="nav-link">Add New Address</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="my-following-authors.html" class="nav-link">Following Authors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="my-rating-reviews.html" class="nav-link">Rating & Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="my-wishlist.html" class="nav-link">Wishlist</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown submenu mega_menu tab-demo">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore
+                </a>
+                <ul class="dropdown-menu sub">
+                  <li>
+                    <div class="row">
+                      <div class="col-lg-5 tabHeader">
+                        <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <li class="nav-item active">
+                            <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill" href="#v-pills-tour" role="tab" aria-controls="v-pills-tour" aria-selected="false">Utility Pages</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="v-others-menu-tab" data-toggle="pill" href="#v-others-menu" role="tab" aria-controls="v-others-menu" aria-selected="false">Company</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="v-pills-doc-tab" data-toggle="pill" href="#v-pills-doc" role="tab" aria-controls="v-pills-doc" aria-selected="true">Shop Pages</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="v-pills-code-tab" data-toggle="pill" href="#v-pills-code" role="tab" aria-controls="v-pills-code" aria-selected="false">Dashboard</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#v-pills-layout" role="tab" aria-controls="v-pills-layout" aria-selected="false">Blog & Author</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-7">
+                        <div class="tab-content tabContent" id="v-pills-tabContent">
+                          <div class="tab-pane fade active show" id="v-pills-tour" role="tabpanel" aria-labelledby="v-pills-tour-tab">
+                            <div class="d-flex">
+                              <ul class="list-unstyled tab_list w_100">
+                                <li>
+                                  <a href="login.html">Sign In</a>
+                                </li>
+                                <li>
+                                  <a href="registration.html">Sign Up</a>
+                                </li>
+                                <li>
+                                  <a href="typography.html">Typography</a>
+                                </li>
+                                <li>
+                                  <a href="page-banner-style-2.html">Banner style
+                                    02</a>
+                                </li>
+                                <li>
+                                  <a href="page-banner-style-3.html">Banner style
+                                    03</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="v-others-menu" role="tabpanel" aria-labelledby="v-others-menu-tab">
+                            <div class="d-flex">
+                              <ul class="list-unstyled tab_list w_100">
+                                <li>
+                                  <a href="book-listing.html">Book Listing</a>
+                                </li>
+                                <li>
+                                  <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                  <a href="contact.html">Contact Us</a>
+                                </li>
+                                <li>
+                                  <a href="terms-condition.html">Terms & Services</a>
+                                </li>
+                                <li>
+                                  <a href="privacy-policy.html">Privacy Policy</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab">
+                            <div class="d-flex">
+                              <ul class="list-unstyled tab_list">
+                                <li>
+                                  <a href="shop.html">Shop</a>
+                                </li>
+                                <li>
+                                  <a href="shop-no-sidebar.html">Shop No Sidebar</a>
+                                </li>
+                                <li>
+                                  <a href="product-single.html">Product Details</a>
+                                </li>
+                                <li>
+                                  <a href="cart.html">Cart</a>
+                                </li>
+                                <li>
+                                  <a href="cart-guest.html">Cart Guest</a>
+                                </li>
+                              </ul>
+                              <ul class="list-unstyled tab_list">
+                                <li>
+                                  <a href="checkout.html">Checkout</a>
+                                </li>
+                                <li>
+                                  <a href="checkout-gift.html">Checkout Gift</a>
+                                </li>
+                                <li>
+                                  <a href="checkout-login.html">Checkout Login</a>
+                                </li>
+
+                                <li>
+                                  <a href="my-wishlist.html">Wishlist</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-code" role="tabpanel" aria-labelledby="v-pills-code-tab">
+                            <div class="d-flex">
+                              <ul class="list-unstyled tab_list">
+                                <li>
+                                  <a href="my-account.html">User Profile</a>
+                                </li>
+                                <li>
+                                  <a href="my-orders.html">Orders</a>
+                                </li>
+                                <li>
+                                  <a href="order-track.html">Order Tracking</a>
+                                </li>
+                                <li>
+                                  <a href="order-confrmation.html">Thank You Page</a>
+                                </li>
+                                <li>
+                                  <a href="my-ebook-library.html">Ebook Library</a>
+                                </li>
+                                <li>
+                                  <a href="my-following-authors.html">Following
+                                    Authors</a>
+                                </li>
+                                <li>
+                                  <a href="my-rating-reviews.html">Rating &
+                                    Authors</a>
+                                </li>
+
+                              </ul>
+                              <ul class="list-unstyled tab_list">
+                                <li>
+                                  <a href="my-list.html">Book List</a>
+                                </li>
+                                <li>
+                                  <a href="my-list-details.html">Book List Details</a>
+                                </li>
+                                <li>
+                                  <a href="my-list-create.html">Create Book List</a>
+                                </li>
+                                <li>
+                                  <a href="my-address.html">Address Book</a>
+                                </li>
+                                <li>
+                                  <a href="add-new-address.html">Add New Address</a>
+
+                                </li>
+
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-layout" role="tabpanel" aria-labelledby="v-pills-layout-tab">
+                            <div class="d-flex">
+                              <ul class="list-unstyled tab_list">
+                                <li>
+                                  <a href="blog-grid.html">Blog Grid</a>
+                                </li>
+                                <li>
+                                  <a href="blog-extend-grid.html">Extended Grid</a>
+                                </li>
+                                <li>
+                                  <a href="blog-list.html">Blog List</a>
+                                </li>
+                                <li>
+                                  <a href="blog-details.html">Blog Details</a>
+                                </li>
+                                <li>
+                                  <a href="author.html">Author</a>
+                                </li>
+                                <li>
+                                  <a href="author-single.html">Author Single</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown submenu active">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Blog
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li class="nav-item active">
+                    <a href="blog-grid.html" class="nav-link">Blog Grid</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="blog-extend-grid.html" class="nav-link">Extended Grid</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="blog-list.html" class="nav-link">Blog List</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="blog-details.html" class="nav-link">Blog Details</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="alter_nav">
+              <ul class="navbar-nav search_cart menu">
+                <li class="nav-item search"><a class="nav-link search-btn" href="javascript:void(0);"><i class="ti-search"></i></a>
+                  <form action="#" method="get" class="menu-search-form">
+                    <div class="input-group">
+                      <input type="search" class="form-control" placeholder="Search here..">
+                      <button type="submit"><i class="ti-arrow-right"></i></button>
+                    </div>
+                  </form>
+                </li>
+                <li class="nav-item shpping-cart dropdown submenu">
+                  <a class="cart-btn nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ti-shopping-cart"></i><span class="num total-cart-count">2</span></a>
+                  <div class="dropdown-menu">
+                    <ul class="cart-dropdown list-unstyled">
+                      <li class="cart-single-item clearfix">
+                        <div class="cart-img">
+                          <img src="assets/img/cart1.jpg" alt="styler">
+                        </div>
+                        <div class="cart-content text-left">
+                          <p class="cart-title"><a href="#">Pale pink and black buttoned
+                              dress</a>
+                          </p>
+                          <p><del>$400.00</del> - $350.00</p>
+                        </div>
+                        <div class="cart-remove">
+                          <a href="#" class="action"><span class="ti-close"></span></a>
+                        </div>
+                      </li>
+                      <li class="cart-single-item clearfix">
+                        <div class="cart-img">
+                          <img src="assets/img/cart1.jpg" alt="styler">
+                        </div>
+                        <div class="cart-content text-left">
+                          <p class="cart-title"><a href="#">Vera bradley lug- gage large
+                              duffel</a>
+                          </p>
+                          <p>$350.00</p>
+                        </div>
+                        <div class="cart-remove">
+                          <a href="#" class="action"><span class="ti-close"></span></a>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="cart_f">
+                      <div class="cart-pricing">
+                        <p class="total">Subtotal :<span class="p-total text-end">$<span class="total-cart-amount"></span></span>
+                        </p>
+                      </div>
+                      <div class="cart-button text-center">
+                        <a href="cart.html" class="btn btn-cart get_btn pink">View Cart</a>
+                        <a href="checkout.html" class="btn btn-cart get_btn dark">Checkout</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="bj_theme_btn strock_btn hidden-sm hidden-xs" href="login.html"><i class="fa-regular fa-user"></i>Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- breadcrumb area  -->
+    <section class="bj_breadcrumb_area text-center banner_animation_03" data-bg-color="#f5f5f5">
+      <div class="bg_one" data-bg-image="assets/img/breadcrumb/breadcrumb_banner_bg.png"></div>
+      <div class="bd_shape one wow fadeInDown layer" data-wow-delay="0.3s" data-depth="0.5"><img data-parallax='{"y": -50}' src="assets/img/breadcrumb/book_left1.png" alt="">
+      </div>
+      <div class="bd_shape two wow fadeInUp layer" data-depth="0.6" data-wow-delay="0.4s"><img data-parallax='{"y": 30}' src="assets/img/breadcrumb/book-left2.png" alt="">
+      </div>
+      <div class="bd_shape three wow fadeInDown layer" data-wow-delay="0.3s" data-depth="0.5"><img data-parallax='{"y": -50}' src="assets/img/breadcrumb/plane-1.png" alt="">
+      </div>
+      <div class="bd_shape four wow fadeInUp layer" data-depth="0.6" data-wow-delay="0.4s"><img data-parallax='{"y": 30}' src="assets/img/breadcrumb/plan-3.png" alt="">
+      </div>
+      <div class="bd_shape five wow fadeInUp layer" data-depth="0.6" data-wow-delay="0.4s"><img data-parallax='{"y": 80}' src="assets/img/breadcrumb/plan-2.png" alt="">
+      </div>
+      <div class="bd_shape six wow fadeInDown layer" data-wow-delay="0.3s" data-depth="0.5"><img data-parallax='{"y": -60}' src="assets/img/breadcrumb/book-right.png" alt="">
+      </div>
+      <div class="bd_shape seven wow fadeInUp layer" data-depth="0.6" data-wow-delay="0.4s"><img data-parallax='{"x": 50}' src="assets/img/breadcrumb/book-right2.png" alt="">
+      </div>
+      <div class="container">
+        <h2 class="title wow fadeInUp" data-wow-delay="0.2s">Blog Grid</h2>
+        <ol class="breadcrumb justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">Blog</li>
+        </ol>
+      </div>
+    </section>
+    <!-- breadcrumb area  -->
+
+    <!-- Blog Area -->
+    <section class="blog-area bg-gray sec_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="blog-widget wow fadeInUp bs-sm">
+                  <img src="assets/img/blog/blog-01.png" alt="Restaurants" />
+                  <div class="blog-content">
+                    <p class="blog-text dot-sep">
+                      <i class="icon_tag_alt"></i>Travel
+                      <span class="sep">videos</span>
+                    </p>
+                    <a href="blog-details.html">
+                      <h5>10 Ways EazyDocs Documentation Plugin</h5>
+                    </a>
+                    <div class="blog-sub-text">
+                      <img src="assets/img/blog/face-04.png" alt="Face" />
+                      <a href="author-single.html">Justin Philips</a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>08 November, 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-widget wow fadeInUp bs-sm">
+                  <img src="assets/img/blog/blog-02.png" alt="Restaurants" />
+                  <div class="blog-content">
+                    <p class="blog-text dot-sep">
+                      <i class="icon_tag_alt"></i>Travel
+                      <span class="sep">videos</span>
+                    </p>
+                    <a href="blog-details.html">
+                      <h5>Internet Banner Advertising Most Reliable</h5>
+                    </a>
+                    <div class="blog-sub-text">
+                      <img src="assets/img/blog/face-04.png" alt="Face" />
+                      <a href="author-single.html">Justin Philips</a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>08 November, 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-widget wow fadeInUp bs-sm">
+                  <img src="assets/img/blog/blog-03.png" alt="Restaurants" />
+                  <div class="blog-content">
+                    <p class="blog-text dot-sep">
+                      <i class="icon_tag_alt"></i>Travel
+                      <span class="sep">videos</span>
+                    </p>
+                    <a href="blog-details.html">
+                      <h5>Internet Banner Advertising Most Reliable</h5>
+                    </a>
+                    <div class="blog-sub-text">
+                      <img src="assets/img/blog/face-04.png" alt="Face" />
+                      <a href="author-single.html">Justin Philips</a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>08 November, 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-widget wow fadeInUp bs-sm">
+                  <img src="assets/img/blog/blog-04.png" alt="Restaurants" />
+                  <div class="blog-content">
+                    <p class="blog-text dot-sep">
+                      <i class="icon_tag_alt"></i>Travel
+                      <span class="sep">videos</span>
+                    </p>
+                    <a href="blog-details.html">
+                      <h5>Internet Banner Advertising Most Reliable</h5>
+                    </a>
+                    <div class="blog-sub-text">
+                      <img src="assets/img/blog/face-04.png" alt="Face" />
+                      <a href="author-single.html">Justin Philips</a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>08 November, 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-widget wow fadeInUp bs-sm">
+                  <img src="assets/img/blog/blog-05.png" alt="Restaurants" />
+                  <div class="blog-content">
+                    <p class="blog-text dot-sep">
+                      <i class="icon_tag_alt"></i>Travel
+                      <span class="sep">videos</span>
+                    </p>
+                    <a href="blog-details.html">
+                      <h5>
+                        Master Productivity & Collaboration with EazyDocs!
+                      </h5>
+                    </a>
+                    <div class="blog-sub-text">
+                      <img src="assets/img/blog/face-04.png" alt="Face" />
+                      <a href="author-single.html">Justin Philips</a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>08 November, 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-widget wow fadeInUp bs-sm">
+                  <img src="assets/img/blog/blog-06.png" alt="Restaurants" />
+                  <div class="blog-content">
+                    <p class="blog-text dot-sep">
+                      <i class="icon_tag_alt"></i>Travel
+                      <span class="sep">videos</span>
+                    </p>
+                    <a href="blog-details.html">
+                      <h5>Internet Banner Advertising Most Reliable</h5>
+                    </a>
+                    <div class="blog-sub-text">
+                      <img src="assets/img/blog/face-04.png" alt="Face" />
+                      <a href="author-single.html">Justin Philips</a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>08 November, 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-widget wow fadeInUp bs-sm">
+                  <img src="assets/img/blog/blog-07.png" alt="Restaurants" />
+                  <div class="blog-content">
+                    <p class="blog-text dot-sep">
+                      <i class="icon_tag_alt"></i>Travel
+                      <span class="sep">videos</span>
+                    </p>
+                    <a href="blog-details.html">
+                      <h5>Internet Banner Advertising Most Reliable</h5>
+                    </a>
+                    <div class="blog-sub-text">
+                      <img src="assets/img/blog/face-04.png" alt="Face" />
+                      <a href="author-single.html">Justin Philips</a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>08 November, 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-widget wow fadeInUp bs-sm">
+                  <img src="assets/img/blog/blog-08.png" alt="Restaurants" />
+                  <div class="blog-content">
+                    <p class="blog-text dot-sep">
+                      <i class="icon_tag_alt"></i>Travel
+                      <span class="sep">videos</span>
+                    </p>
+                    <a href="blog-details.html">
+                      <h5>
+                        Best Documentation For eLearning Websites In 2024
+                      </h5>
+                    </a>
+                    <div class="blog-sub-text">
+                      <img src="assets/img/blog/face-04.png" alt="Face" />
+                      <a href="author-single.html">Justin Philips</a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>08 November, 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-widget wow fadeInUp bs-sm">
+                  <img src="assets/img/blog/blog-09.png" alt="Restaurants" />
+                  <div class="blog-content">
+                    <p class="blog-text dot-sep">
+                      <i class="icon_tag_alt"></i>Travel
+                      <span class="sep">videos</span>
+                    </p>
+                    <a href="blog-details.html">
+                      <h5>
+                        Understanding Documentation Types and Best Practices
+                      </h5>
+                    </a>
+                    <div class="blog-sub-text">
+                      <img src="assets/img/blog/face-04.png" alt="Face" />
+                      <a href="author-single.html">Justin Philips</a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>08 November, 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-widget wow fadeInUp bs-sm">
+                  <img src="assets/img/blog/blog-10.png" alt="Restaurants" />
+                  <div class="blog-content">
+                    <p class="blog-text dot-sep">
+                      <i class="icon_tag_alt"></i>Travel
+                      <span class="sep">videos</span>
+                    </p>
+                    <a href="blog-details.html">
+                      <h5>
+                        Gain Deep Insights into Your Knowledge Base’s
+                        Performance
+                      </h5>
+                    </a>
+                    <div class="blog-sub-text">
+                      <img src="assets/img/blog/face-04.png" alt="Face" />
+                      <a href="author-single.html">Justin Philips</a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>08 November, 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="...">
+              <ul class="pagination pagi-content">
+                <li class="page-item">
+                  <a class="page-link" href="#"><i class="ti-angle-left"></i>Prev</a>
+                </li>
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">...</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next<i class="ti-angle-right"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-xl-4">
+            <div class="blog-right-content px-xl-4 wow fadeInLeft">
+              <div class="input-group mb-50">
+                <input type="text" name="search" id="search" placeholder="Search" />
+                <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+
+              <h4 class="blog-title">Post Categories</h4>
+
+              <ul class="list-unstyled category_list">
+                <li>
+                  <a href="#">Creative <span>(12)</span></a>
+                </li>
+                <li>
+                  <a href="#">Inspiration <span>(8)</span></a>
+                </li>
+                <li>
+                  <a href="#">Lifestyle <span>(3)</span></a>
+                </li>
+                <li>
+                  <a href="#">News <span>(4)</span></a>
+                </li>
+                <li>
+                  <a href="#">Photography <span>(12)</span></a>
+                </li>
+                <li>
+                  <a href="#">Skill <span>(15)</span></a>
+                </li>
+                <li>
+                  <a href="#">Tourist Tours <span>(10)</span></a>
+                </li>
+                <li>
+                  <a href="#">Inspire <span>(5)</span></a>
+                </li>
+              </ul>
+
+              <h4 class="blog-title mb-30">Recent News</h4>
+              <div class="recent-news mb-50">
+                <div class="news-item">
+                  <img src="assets/img/blog/news-01.png" alt="Images" />
+                  <div>
+                    <a class="news-title" href="blog-details.html">Is It Worth Buying A Premium Form Builder.</a>
+                    <p class="news-date">
+                      <i class="fa-solid fa-calendar-days"></i> 12 November, 2024
+                    </p>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <img src="assets/img/blog/news-02.png" alt="Images" />
+                  <div>
+                    <a class="news-title" href="blog-details.html">Is It Worth Buying A Premium Form Builder.</a>
+                    <p class="news-date">
+                      <i class="fa-solid fa-calendar-days"></i> 12 November, 2024
+                    </p>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <img src="assets/img/blog/news-03.png" alt="Images" />
+                  <div>
+                    <a class="news-title" href="blog-details.html">How to Optimize Your Knowledge Base with EazyDocs</a>
+                    <p class="news-date">
+                      <i class="fa-solid fa-calendar-days"></i> 12 November, 2024
+                    </p>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <img src="assets/img/blog/news-04.png" alt="Images" />
+                  <div>
+                    <a class="news-title" href="blog-details.html">Master Productivity & Collaboration!</a>
+                    <p class="news-date">
+                      <i class="fa-solid fa-calendar-days"></i> 12 November, 2024
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h4 class="blog-title mb-30">Tags</h4>
+              <div class="tags-item d-flex flex-wrap mb-50">
+                <a class="tags-btn" href="#">travel</a>
+                <a class="tags-btn" href="#">help desk</a>
+                <a class="tags-btn" href="#">photography</a>
+                <a class="tags-btn" href="#">lifestyle</a>
+                <a class="tags-btn" href="#">WordPress</a>
+                <a class="tags-btn" href="#">development</a>
+                <a class="tags-btn" href="#">support</a>
+                <a class="tags-btn" href="#">JavaScript</a>
+                <a class="tags-btn" href="#">ecommerce</a>
+                <a class="tags-btn" href="#">WordPress</a>
+              </div>
+              <h4 class="blog-title mb-30">Instagram</h4>
+              <div class="instagram-gallery-widget">
+                <a href="#" class="instagram-item">
+                  <img src="assets/img/blog/Instagram-01.png" alt="" />
+                </a>
+                <a href="#" class="instagram-item">
+                  <img src="assets/img/blog/Instagram-02.png" alt="" />
+                </a>
+                <a href="#" class="instagram-item">
+                  <img src="assets/img/blog/Instagram-03.png" alt="" />
+                </a>
+                <a href="#" class="instagram-item">
+                  <img src="assets/img/blog/Instagram-04.png" alt="" />
+                </a>
+                <a href="#" class="instagram-item">
+                  <img src="assets/img/blog/Instagram-05.png" alt="" />
+                </a>
+                <a href="#" class="instagram-item">
+                  <img src="assets/img/blog/Instagram-06.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Area -->
+
+    <!-- footer -->
+    <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#212833">
+      <div class="container">
+        <div class="footer_top">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="f_widget link_widget pe-4">
+                <a href="#" class="f_logo">
+                  <img src="assets/img/home/logo-white.svg" alt="f_logo">
+                </a>
+                <div class="footer_subscribes">
+                  <h2 class="f_widget_title">Subscribe Now</h2>
+                  <form action="#">
+                    <div class="footer_subscribe_form">
+                      <input type="text" placeholder="Enter your Email" class="form-control">
+                      <button type="submit" class="bj_theme_btn">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="f_widget link_widget">
+                <h2 class="f_widget_title">Company</h2>
+                <ul class="list-unstyled list">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                  <li><a href="blog-grid.html">Blog</a></li>
+                  <li><a href="author.html">Author</a></li>
+                  <li><a href="book-listing.html">Books</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="f_widget link_widget">
+                <h2 class="f_widget_title">Services</h2>
+                <ul class="list-unstyled list">
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="my-orders.html">Order</a></li>
+                  <li><a href="cart.html">Cart</a></li>
+                  <li><a href="checkout.html">Checkout</a></li>
+                  <li><a href="my-wishlist.html">Wishlist</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="f_widget link_widget">
+                <h2 class="f_widget_title">Pages</h2>
+                <ul class="list-unstyled list">
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="registration.html">Register</a></li>
+                  <li><a href="typography.html">Typography</a></li>
+                  <li><a href="404.html">404 Page</a></li>
+                  <li><a href="my-ebook-library.html">Ebook Library</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="f_widget link_widget">
+                <h2 class="f_widget_title">Contacs Us</h2>
+                <ul class="list-unstyled list">
+                  <li><a href="tel:610383766284"><i class="fa-solid fa-phone-volume"></i>+61 (0) 3
+                      8376 6284</a></li>
+                  <li><a href="mailto:noreply@bookjar.com"><i class="fa-solid fa-envelope"></i>noreply@bookjar.com</a>
+                  </li>
+                </ul>
+                <ul class="list-unstyled f_social_round">
+                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom d-flex  justify-content-center">
+          <p>© 2024 Bookjar. All Rights <a href="https://www.bootstrapmb.com">bootstrapMB</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </div>
+
+  <!-- Back to top button -->
+  <a id="back-to-top" title="Back to Top"></a>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <script src="assets/js/preloader.js"></script>
+  <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+  <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/vendors/parallax/parallax.js"></script>
+  <script src="assets/vendors/slick/slick.min.js"></script>
+  <script src="assets/js/comming-soon.js"></script>
+  <script src="assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+  <script src="assets/vendors/parallax/jquery.parallax-scroll.js"></script>
+  <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+  <script src="assets/vendors/wow/wow.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+
+</html>

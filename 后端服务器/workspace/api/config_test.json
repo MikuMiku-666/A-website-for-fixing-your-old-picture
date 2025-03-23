@@ -1,0 +1,25 @@
+{
+    "config":[
+        {
+            "name":"va_sharpen_standard",
+            "config":{
+                "module":"sharpen3",
+                "module_params":{
+                    "model_name":"SharpenGeneralStable",
+                    "blur_type":1,
+                    "remove_blur":0.5,
+                    "suppress_noise":0.5,
+                    "remove_artifacts":0.5,
+                    "autoparams":true,
+                    "automodel":true
+                },
+                "out_params":{
+                    "compress":{
+                        "quality":100
+                    }
+                }
+            }
+        }
+    ],
+    "name":"va_sharpen_standard"
+}
